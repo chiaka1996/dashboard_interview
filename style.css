@@ -101,15 +101,20 @@
     font-weight: bold;
 }
 
+.dealIcon{
+    margin-right: 4%;
+}
+
 .importDeal, .createDeal{
     color: green;
     border: 1px solid green; 
-    font-size: 15px;
+    font-size: 13px;
     margin-left: 1%;
     margin-right: 1%;
-    padding: 10px;
+    padding: 10px 5px 0 5px;
     border-radius: 3px;
     cursor: pointer;
+    width: 10%;
 }
 .createDeal{
     background-color: green;
