@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    margin: none;
+    display: grid;
+    grid-template-columns: 5% 5% 90%;
+    height: 100vh;
+    padding: none;
+}
+
+.grid1{
+    background-color: green;
+    padding-top: 50%;
+    position: relative;
+}
+
+.grid1 div{
+   width: 50%;
+   margin: 0 auto 20% auto;
+}
+
+.logo{
+    background-color: white;
+    color: green;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.grid div i{
+    font-size: 50px;
+}
+
+.icon-color{
+    color: white;
+}
+
+.menu-bar{
+    position: relative;
+    bottom: -57%;
+}
+
+.user-div{
+    position: relative;
+    bottom: -60%;
+    border-radius: 50px;
+}
+
+.grid2{
+    background-color: lightgreen;
+    padding-top: 30%;
+    text-align: center;
+}
+
+.top-icon{
+    background-color: green;
+    border-radius: 50px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    margin-left: 14%;
+    padding-top: 20%;
+    font-size: 18px;
+    margin-bottom: 44%;
+}
+
+.links{
+    margin-bottom: 35%;
+    font-size: 20px;
+}
+
+.tag-div{
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    margin-left: 14%;
+    padding-top: 20%;
+    font-size: 21px;
+    border-radius: 5px;
+
+}
+.dealsDiv{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5%;
+    padding-left: 1%;
+}
+
+.rowFlex{
+    flex: 1;
+}
+
+.deals{
+    font-weight: bold;
+}
+
+.importDeal, .createDeal{
+    color: green;
+    border: 1px solid green; 
+    font-size: 15px;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.createDeal{
+    background-color: green;
+    color: white;
+}
+
+.closedDeals{
+    display: flex;
+    flex-direction: row;
+    border-top: 4px solid lightgrey;
+    margin-top: 0.5%;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.dealHead{
+    font-size: 14px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: -2px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: green;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px green;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.closedDealsFlex{
+    flex: 1;
+}
+
+.kabana-grid{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    margin: 2% 1% 0 1%;
+    /* border: 1px solid lightgrey; */
+}
+
+.list{
+    border: 1px solid lightgrey;
+    padding-bottom: 15%;
+}
+
+.listHeader{
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 10%;
+}
+
+.dollar, .dealsNumber{
+    font-size: 12px;
+}
+
+.dollar{
+    color: green;
+}
+
+.circleBackground{
+    background-color: rgb(214, 243, 214);
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border-radius: 50px;
+    /* text-align: center; */
+    color: green;
+    position: relative;
+    margin-bottom: 12%;
+}
+
+.plus{
+    position: absolute;
+    top: 37%;
+    left: 40%;
+}
+
+.list-item{
+    width: 92%;
+    height: 110px;
+    margin-left: 4%;
+    margin-right: 4%;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.list-item-Header{
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.cost{
+    color: grey;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 4%;
+}
+
+.activities{
+    color: grey;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 3% 0 2%;
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+}
+
+.arrow{
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
+    
+}
+
+.list-item:hover{
+    border: 1px solid lightgreen;
+    cursor: pointer;
+}
