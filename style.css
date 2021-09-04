@@ -1,8 +1,14 @@
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+}
+
+.sidebar1,.sidebar2{
+    display: none;
 }
 
 .container{
@@ -17,6 +23,7 @@
     background-color: green;
     padding-top: 50%;
     position: relative;
+    display: block;
 }
 
 .grid1 div{
@@ -91,7 +98,9 @@
     flex-direction: row;
     margin-top: 0.5%;
     padding-left: 1%;
+    padding-right: 1%;
 }
+
 
 .rowFlex{
     flex: 1;
@@ -109,9 +118,9 @@
     color: green;
     border: 1px solid green; 
     font-size: 13px;
-    margin-left: 1%;
-    margin-right: 1%;
-    padding: 10px 5px 0 5px;
+    /* margin-left: 1%;
+    margin-right: 1%; */
+    padding: 1% 0.5% 0 0.5%;
     border-radius: 3px;
     cursor: pointer;
     width: 10%;
@@ -119,6 +128,7 @@
 .createDeal{
     background-color: green;
     color: white;
+    margin-left: 1%;
 }
 
 .closedDeals{
@@ -287,4 +297,172 @@
 .list-item:hover{
     border: 1px solid lightgreen;
     cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+    .hamburger{
+        display: block;
+        margin-top: 1%;
+        margin-right: 1.5%; 
+    }
+    
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: green;
+    }
+    
+    .bar_one{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: green;
+        transform:  translateY(10px) rotate(45deg); 
+    }
+    
+    .bar_two {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: green;
+        transform: translateY(-1px) rotate(-45deg);
+    }
+    
+    .bar_three{
+        opacity: 0;
+    }
+    .sidebar1,.sidebar2{
+        display: block;
+        position: fixed;
+        /* right:0.2%; */
+        right: -15%;
+        background-color: green;
+        height: 100vh;
+        width: 15%;
+        z-index: 200;
+        padding-top: 5%;
+         text-align: center;
+         transition: right 1s ease-in-out;
+    }
+    .sidebar2{
+        /* right: 15%; */
+        background-color: lightgreen;
+    }
+
+    .addsidebar1{
+        right: 0.2%;
+        transition: right 1s ease-in-out;
+    }
+
+    .addsidebar2{
+        right: 15%;
+        transition: right 1s ease-in-out;
+    }
+
+    /* .removeSidebar{
+        right: -100%;
+        transition: right 1.5s ease-in-out;
+    } */
+
+    .grid1, .grid2{
+        display: none;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .kabana-grid{
+        display: flex;
+        flex-direction: column;
+        margin: 2% 0 0 0;
+        /* border: 1px solid lightgrey; */
+    }
+
+    .importDeal, .createDeal{
+        color: green;
+        border: 1px solid green; 
+        font-size: 13px;
+        margin-left: 1%;
+        /* margin-right: 1%; */
+        padding: 2.3% 0.5% 0 0.5%;
+        border-radius: 3px;
+        cursor: pointer;
+        min-width: 28%;
+    }
+    .createDeal{
+        background-color: green;
+        color: white;
+    }
+     
+     .logo{
+         background-color: white;
+         color: green;
+         font-weight: bold;
+         border-radius: 5px;
+         padding:3px;
+         font-size: 20px;
+         text-align: center;
+         width: 65%;
+         margin: 0 auto 0 auto;
+     }
+     
+     .slidebar1 div i{
+         font-size: 40px;
+     }
+
+     .logo, .house{
+         margin-bottom: 50%;
+     }
+
+
+     
+     .menu-bar{
+         position: relative;
+         bottom: -57%;
+     }
+     
+     .user-div{
+         position: relative;
+         bottom: -60%;
+         border-radius: 50px;
+     }
+     
+     .top-icon{
+         background-color: green;
+         border-radius: 50px;
+         color: white;
+         width: 50px;
+         height: 50px;
+         margin-left: 14%;
+         padding-top: 20%;
+         font-size: 18px;
+         margin-bottom: 44%;
+     }
+     
+     .links{
+         margin-bottom: 35%;
+         font-size: 20px;
+     }
+     
+     .tag-div{
+         background-color: green;
+         width: 50px;
+         height: 50px;
+         margin-left: 14%;
+         padding-top: 20%;
+         font-size: 21px;
+         border-radius: 5px;
+     
+     }
 }
